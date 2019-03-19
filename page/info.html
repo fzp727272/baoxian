@@ -1,0 +1,73 @@
+<div class="advert" style="height:400px; background-image: url(../img/banner-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;">
+  <!--   <h2 style="top: 170px;">杜绝不了意外的话 就请给予我们破晓的勇气</h2> -->
+</div>
+<section>
+  <div class="box clearfix">
+    <div class="box-left">
+      <div class="title">
+        <h3> 信息披露</h3>
+      </div>
+      <ul>
+        <li id="gaozhishu" style="cursor: pointer;"><a >客户告知书</a></li>
+        <li id="paizhaozizhi" style="cursor: pointer;"><a >牌照资质</a></li>
+      </ul>
+    </div>
+    <div class="box-right">
+      <div class="box-right-mid">
+        <!-- 第四段 -->
+        <h4>客户告知书
+</h4>
+        <p style="line-height: 24px;">
+          <br />
+          尊敬的客户：<br />
+          感谢您委托我公司（北京信成和盛保险经纪有限责任公司）代为办理保险业务，并为我们提供了进行保险经纪服务的机会。本公司是基于投保人的利益，为投保人与保险公司订立保险合同提供中介服务的保险专业中介机构，将根据您的实际需求和风险状况，提供专业的保险经纪服务，同时做到保守您的各种数据资料秘密以避免信息资料外流。为了保护您的合法权益，按照《保险经纪人监管规定》和《互联网保险业务监管暂行办法》的要求，本公司履行客户告知义务，将有关事项告知如下：<br />
+          <br /><strong>一、公司信息</strong><br />
+          1. 名称：北京信成和盛保险经纪有限责任公司<br />
+          2. 住所：北京市东城区桃园东里20号2层2082<br />
+          3、经营保险经纪业务许可证编号：260471000000800<br />
+          4、许可证有效期：2021年10月1日<br />
+          <br /><strong>二、经营许可范围</strong> <br />
+          1. 在全国区域内（港、澳、台除外）为投保人拟订投保方案、选择保险人、办理投保手续 <br />
+          2. 协助被保险人或受益人进行索赔 <br />
+          3. 再保险经纪业务 <br />
+          4. 为委托人提供防灾、防损或风险评估、风险管理咨询服务 <br />
+          5. 中国保监会批准的其他业务<br />
+          <br /><strong>三、获取报酬的方式</strong> <br />
+          本公司依法与合作保险公司签订合作协议，并从保险公司处取得保险经纪佣金，具体以保险公司告知为准。<br />
+          <br /><strong>四、关联关系说明</strong><br />
+          本公司及本公司的高级管理人员与经纪业务相关的保险公司、其他保险中介机构不存在关联关系。<br />
+          <br /><strong>五、请仔细阅读保险条款，重点关注保险责任、责任免除、被保险人权利义务、免赔额或免赔率的计算、犹豫期解除合同、退保损失、保险新型产品费用扣除及投资风险、健康保险产品等待期等内容，并可要求本公司业务人员对上述内容进行详细讲解。<br/>
+<br/>六、请向本公司业务人员了解《中华人民共和国保险法》等法律法规对于索赔时效、保险公司理赔时限、合同中止与失效、未成年人投保限额、保险标的转让、重复保险等的相关规定，以及不履行如实告知义务、故意制造保险事故或夸大事故损失、申报年龄不真实等情形导致的法律后果。</strong><br />
+          <br /><strong>六、根据《中华人民共和国保险法》的规定，保险经纪机构因过错给投保人、被保险人造成损失的，依法承担赔偿责任。</strong><br />
+          <br /><strong>七、本公司已按《保险经纪人监管规定》要求投保职业责任保险。</strong><br />
+          <br /><strong>八、如您发现我公司从业人员存在误导行为及其它损害您合法权益的行为，请注意保留书面证据或其他证据，可向我公司投诉（电话：010-59113559）反映。   </strong><br />
+        </p>
+      </div>
+      <div style="display: none" class="box-right-mid">
+        <!-- 第四段 -->
+        <h4>牌照资质
+</h4>
+        <h5 style="line-height: 24px;">
+          营业执照
+    </h5>
+        <img src="../image/yingyezhizhao.png" alt="">
+        <h5 style="line-height: 24px;">
+          经营许可
+    </h5>
+        <img src="../image/jingyingxuke.png" alt="">
+      </div>
+      </div>
+    </div>
+</section>
+<script>
+$("#paizhaozizhi").click(function(event) {
+  $(".box-right-mid").eq(0).fadeOut('fast');
+   $(".box-right-mid").eq(1).fadeIn('fast');
+});
+$("#gaozhishu").click(function(event) {
+  $(".box-right-mid").eq(1).fadeOut('fast');
+   $(".box-right-mid").eq(0).fadeIn('fast');
+});
+</script>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="。" />
+    <meta name="keywords" content="" />
+    <meta name="author" content=""> 
+    <title>北京信成和盛保险经纪有限责任公司-首页</title>
+    <!-- 框架 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 样式清理 -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- 通用页面样式 -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- 首页样式 -->
+    <link href="css/index.css" rel="stylesheet">
+  <!-- 首页样式 -->
+    <link href="css/page.css" rel="stylesheet">
+    <!-- HTML5兼容性处理 -->
+    <!-- Respond.js响应式设计>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons网站图标 -->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="bookmark" href="img/favicon.ico" type="image/x-icon"/>
+  </head>
+  <body>
+    <!-- 移动端导航 -->
+    <div class="mask"></div>
+    <div class="sidebar">
+      <ul>
+     <li><a  class=" active home">首页</a></li>
+              <li><a  class="productservice">产品服务</a></li>
+              <li><a  class="info">信息披露</a></li>
+              <li><a  class="about">关于我们</a></li>
+              <li><a  class="law">法律法规</a></li>
+              <li><a  class="corporation">合作机构</a></li>
+
+               <li><a  class="helpcenter">帮助中心</a></li>
+      </ul>
+    </div>
+    <!-- header顶部导航 -->
+    <header>
+      <div class="header-container">
+        <div class="nav-box">
+          <!-- logo -->
+          <div class="nav-left">
+            <a id="logo_top" href="#"></a>
+          </div>
+          <!-- memu选项 -->
+          <div class="nav-mid">
+          
+            <ul class="navbar-nav">
+              <li><a  class=" active home">首页</a></li>
+              <li><a  class="productservice">产品服务</a></li>
+              <li><a  class="info">信息披露</a></li>
+              <li><a  class="about">关于我们</a></li>
+              <li><a  class="law">法律法规</a></li>
+              <li><a  class="corporation">合作机构</a></li>
+
+               <li><a  class="helpcenter">帮助中心</a></li>
+            </ul>            
+          </div>
+          <!-- 响应式菜单 -->
+          <div class="nav-mobile-menu">
+              <span class="sidebar_trigger"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+         <!-- banner轮播组件 -->
+ 
+    </div>
+
+    <!-- footer页面底部 -->
+    <footer>
+       <div class="footer-box clearfix">
+          <div class="footer-left">
+              <span class="globle"></span>
+          </div>
+          <div class="footer-right">
+            <div class="footer-laber">
+              <ul> 
+                <li><a href="aboutus.html">关于我们</a></li>
+                <li><a href="team.html">专业团队</a></li>
+                <li><a href="product.html">业务介绍</a></li>
+              </ul>
+              <ul>
+                <li><a href="culture.html">公司文化</a></li>          
+                <li><a href="job.html">求职招聘</a></li>
+                <li><a href="contactus.html">联系我们</a></li>
+              </ul>                        
+              <ul>        
+                <li class="footer-contact">邮箱:&nbsp feedback@heyifintech.com</li>
+                <li class="footer-contact">电话:&nbsp +86 21 3115 6258</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- 版权信息 -->
+    <div class="container copy">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p class="copyright">©2014-2017 Shanghai HeYi Financial Services Limited. All rights reserved. <a href="http://www.miitbeian.gov.cn">沪ICP备 15008941 号</a> </p>
+          </div>
+      </div>
+    </div>
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" style="display: none;"></button>
+    <!-- 框架库加载 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    　　<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+    <!-- 脚本加载 -->
+    <script src="js/main.js"></script>
+    <script>
+     
+ function changeActive(ele){
+  $(".navbar-nav").find('a').removeClass('active');
+ele.addClass('active');
+ }    
+
+function changeHtml(url){
+  $.ajax({
+       url:url,
+       type:'get',
+       success:function(res){
+           $('#container').html($(res));
+       }
+   });
+};
+changeHtml('./home.html');
+
+
+
+
+$(".home").click(function(event) {
+
+  changeActive($(this));
+  /* Act on the event */
+  changeHtml('./home.html');
+});
+
+$(".productservice").click(function(event) {
+changeActive($(this));
+  /* Act on the event */
+  changeHtml('./page/product.html');
+});
+
+$(".info").click(function(event) {
+changeActive($(this));
+  /* Act on the event */
+  changeHtml('./page/info.html');
+});
+$(".about").click(function(event) {
+changeActive($(this));
+  /* Act on the event */
+  changeHtml('./page/about.html');
+});
+$(".law").click(function(event) {
+changeActive($(this));
+  /* Act on the event */
+  changeHtml('./page/law.html');
+});
+$(".corporation").click(function(event) {
+changeActive($(this));
+  /* Act on the event */
+  changeHtml('./page/corporation.html');
+});
+$(".helpcenter").click(function(event) {
+changeActive($(this));
+  /* Act on the event */
+  changeHtml('./page/helpcenter.html');
+});
+      
+    </script>
+  </body>
+</html>
